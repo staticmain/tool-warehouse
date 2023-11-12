@@ -1,3 +1,5 @@
+import { ref } from 'vue-demi';
+
 /**
  * 检测密码和确认密码是否一致
  */
@@ -18,7 +20,7 @@ export function useCheckPassword() {
         if (password.value === confirmPassword.value) {
             return true;
         }
-        return '输入的密码不一致';
+        return '输入的密码不同';
     };
 
     return {
