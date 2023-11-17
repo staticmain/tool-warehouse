@@ -1,16 +1,15 @@
 {
   "name": "tool-warehouse",
-  "version": "1.0.0",
   "description": "A common tool repository",
-  "main": "index.js",
+  "private": "true",
+  "workspaces": ["src/*"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sftp": "gulp sftp-server"
   },
-  "author": "",
+  "author": "static_main",
   "license": "ISC",
   "dependencies": {
-    "@vueuse/core": "^10.6.0",
-    "vue": "^2",
-    "vue-demi": "^0.14.6"
+    "gulp": "^4.0.2",
+    "gulp-sftp-up4": "^0.1.8"
   }
 }
